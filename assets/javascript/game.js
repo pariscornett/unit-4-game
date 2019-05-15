@@ -3,10 +3,10 @@ var wins = 0;
 var losses = 0;
 var totalScore = 0;
 var numberToGuess;
-var basil;
-var clove;
-var dill;
-var sage;
+var basilClick;
+var cloveClick;
+var dillClick;
+var sageClick;
 
 
 //randomize the number for the player to guess (set to 1-10 for testing purposes)
@@ -18,6 +18,16 @@ var numberToGuess = 1 + Math.floor(Math.random() * 10);
 $(".randomNumber").append(numberToGuess);
 
 //randomize the number for each icon
+var basilClick = 1 + Math.floor(Math.random()* 2);
+var cloveClick = 1 + Math.floor(Math.random()* 2);
+var dillClick = 1 + Math.floor(Math.random()* 2);
+var sageClick = 1 + Math.floor(Math.random()* 2);
+
+console.log(basilClick);
+
+
+//make icons clickable
+
 
 
 //code randomized numbers to add up 
