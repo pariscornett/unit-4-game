@@ -25,23 +25,27 @@ var sageClick = 1 + Math.floor(Math.random()* 2);
 
 //make icons clickable
 $(".basil").click(function() {
-    alert ("you clicked basil!");
+    $(".score").append(basilClick);
 });
 $(".clove").click(function() {
-    alert ("you clicked clove!");
+    $(".score").append(cloveClick);
 });
 
 $(".dill").click(function() {
-    alert ("you clicked dill");
+    $(".score").append(dillClick);
 });
 
 $(".sage").click(function() {
-    alert ("you clicked sage!");
+    $(".score").append(sageClick);
 });
 
 
 //code randomized numbers to add up 
-
+    //whenever an icon is clicked, add its random value to the totalScore
+    
+if (totalScore > 0) {
+    
+}
 
 //store added numbers in score, display in DOM
 
