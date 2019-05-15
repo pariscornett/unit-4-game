@@ -1,0 +1,38 @@
+body {
+    background-image: url("../images/leaves-pattern.png");
+}
+
+h1{
+    text-align:center;
+    font-family: 'Old Standard TT', serif;
+    padding: 40px;
+    font-size: 40px;
+    color:#19aa55;
+}
+
+.directions{
+    font-family: 'Old Standard TT', serif;
+    line-height: 40px;
+    color: #19aa55;
+}
+
+.randomNumber{
+    text-align:center;
+    font-family: 'Old Standard TT', serif;
+    background-color: #19aa55;
+    font-size: 40px;
+    color: #fff;
+    height: 350px;
+}
+
+.wins, .losses, .score{
+    font-family: 'Old Standard TT', serif;
+    color: #19aa55;
+    font-size: 40px;
+    padding: 20px;
+}
+
+.basil, .clove, .dill, .sage{
+    padding: 50px; 
+}
+
