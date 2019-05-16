@@ -25,20 +25,28 @@ var sageClick = 1 + Math.floor(Math.random()* 2);
 
 //make icons clickable
 $(".basil").click(function() {
-    $(".score").append(basilClick);
+    totalScore += basilClick;
+    $(".score").append(totalScore);
 });
 $(".clove").click(function() {
-    $(".score").append(cloveClick);
+    totalScore += cloveClick;
+    $(".score").append(totalScore);
 });
 
 $(".dill").click(function() {
-    $(".score").append(dillClick);
+    totalScore += dillClick;
+    $(".score").append(totalScore);
 });
 
 $(".sage").click(function() {
-    $(".score").append(sageClick);
+    totalScore += sageClick;
+    $(".score").append(totalScore);
 });
 
+console.log(basilClick);
+console.log(cloveClick);
+console.log(dillClick);
+console.log(sageClick);
 
 //code randomized numbers to add up 
     //whenever an icon is clicked, add its random value to the totalScore
@@ -54,6 +62,8 @@ if (totalScore > 0) {
 //set conditions for winning and losing
 if (totalScore == numberToGuess) {
     wins++;
+} else if (totalScore > numberToGuess){
+    losses++;
 }
 
 
