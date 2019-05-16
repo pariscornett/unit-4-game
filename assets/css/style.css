@@ -34,5 +34,7 @@ h1{
 
 .basil, .clove, .dill, .sage{
     padding: 50px; 
+    cursor:pointer;
 }
+
 

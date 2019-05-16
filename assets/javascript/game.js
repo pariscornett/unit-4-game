@@ -11,14 +11,14 @@ var sageClick;
 
 //randomize the number for the player to guess (set to 1-10 for testing purposes)
 
-var numberToGuess = 1 + Math.floor(Math.random() * 10);
+var numberToGuess = 1+ Math.floor(Math.random() * 10); //19*100 in future
 
 
 //display that number for the user to see
 $(".randomNumber").append(numberToGuess);
 
 //randomize the number for each icon (set tp 1-2 for testing purposes)
-var basilClick = 1 + Math.floor(Math.random()* 2);
+var basilClick = 1 + Math.floor(Math.random()* 2);  //1*12 in future  
 var cloveClick = 1 + Math.floor(Math.random()* 2);
 var dillClick = 1 + Math.floor(Math.random()* 2);
 var sageClick = 1 + Math.floor(Math.random()* 2);
@@ -52,7 +52,9 @@ if (totalScore > 0) {
 
 
 //set conditions for winning and losing
-
+if (totalScore == numberToGuess) {
+    wins++;
+}
 
 
 
