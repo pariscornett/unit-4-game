@@ -26,50 +26,43 @@ var sageClick = 1 + Math.floor(Math.random()* 2);
 //make icons clickable
 $(".basil").click(function() {
     //add up score and store it in the var totalScore
-    totalScore += basilClick;
-    //erase previous score 
+   totalScore += basilClick;
+    //erase previous score from DOM
     $(".score").empty();
     //display current score
     $(".score").append("Your Score: " +totalScore);
 });
 $(".clove").click(function() {
-    totalScore += cloveClick;
+   totalScore += cloveClick;
     $(".score").empty();
     $(".score").append("Your Score: " +totalScore);
 });
 
 $(".dill").click(function() {
-    totalScore += dillClick;
+   totalScore += dillClick;
     $(".score").empty();
     $(".score").append("Your Score: " +totalScore);
 });
 
 $(".sage").click(function() {
-    totalScore += sageClick;
+   totalScore += sageClick;
     $(".score").empty();
     $(".score").append("Your Score: " +totalScore);
 });
 
-    
-if (totalScore > 0) {
-    
-}
-
-//store added numbers in score, display in DOM
-
-
 
 //set conditions for winning and losing
-if (totalScore == numberToGuess) {
-    wins++;
-    //record wins and losses in DOM
-    $(".wins").append(wins);
-} else if (totalScore > numberToGuess){
-    losses++;
-    //record wins and losses in DOM
-    $(".losses").append(losses);
-}
+$(document).ready(function(){
+    if (totalScore === numberToGuess) {
+        wins++
+        //record wins and losses in DOM
+    } else if (totalScore > numberToGuess){
+        losses++
+        //record wins and losses in DOM
+        $(".losses").html(losses);
+    }
 
+});
 
 
 
