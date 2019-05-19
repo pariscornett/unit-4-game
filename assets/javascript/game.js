@@ -51,7 +51,6 @@ function update() {
 
 //make icons clickable
 $(".basil").click(function(){
-    console.log (totalScore, numberToGuess)
     //add up score and store it in the var totalScore
    totalScore += basilClick;
     //erase previous score from DOM
@@ -63,7 +62,6 @@ $(".basil").click(function(){
 });
 
 $(".clove").click(function() {
-    console.log (totalScore, numberToGuess)
    totalScore += cloveClick;
     $(".score").empty();
     $(".score").append("Your Score: " +totalScore);
@@ -71,7 +69,6 @@ $(".clove").click(function() {
 });
 
 $(".dill").click(function() {
-    console.log (totalScore, numberToGuess)
    totalScore += dillClick;
     $(".score").empty();
     $(".score").append("Your Score: " +totalScore);
@@ -79,7 +76,6 @@ $(".dill").click(function() {
 });
 
 $(".sage").click(function() {
-    console.log (totalScore, numberToGuess)
    totalScore += sageClick;
     $(".score").empty();
     $(".score").append("Your Score: " +totalScore);
