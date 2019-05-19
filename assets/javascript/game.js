@@ -10,22 +10,22 @@ var dillClick;
 var sageClick;
 
 
-//randomize the number for the player to guess (set to 1-10 for testing purposes)
-
-var numberToGuess = 1+ Math.floor(Math.random() * 10); //19*100 in future
+//randomize the number for the player to guess 
+var numberToGuess = 19+ Math.floor(Math.random() * 100); 
 
 
 //display that number for the user to see
 $("#targetNumber").html(numberToGuess);
 
-var basilClick = 1 + Math.floor(Math.random()* 2);  //1*12 in future  
-var cloveClick = 1 + Math.floor(Math.random()* 2);
-var dillClick = 1 + Math.floor(Math.random()* 2);
-var sageClick = 1 + Math.floor(Math.random()* 2);
+//randomize the number for each icon
+var basilClick = 1 + Math.floor(Math.random()* 12);  
+var cloveClick = 1 + Math.floor(Math.random()* 12);
+var dillClick = 1 + Math.floor(Math.random()* 12);
+var sageClick = 1 + Math.floor(Math.random()* 12);
 
-//randomize the number for each icon (set tp 1-2 for testing purposes)
+//make game reset with wins and losses without refreshing page
 function resetGame() {
-basilClick = 1 + Math.floor(Math.random()* 2);  //1*12 in future  
+basilClick = 1 + Math.floor(Math.random()* 2);    
 cloveClick = 1 + Math.floor(Math.random()* 2);
 dillClick = 1 + Math.floor(Math.random()* 2);
 sageClick = 1 + Math.floor(Math.random()* 2);
@@ -87,15 +87,3 @@ $(".sage").click(function() {
 });
     }
 );
-
-
-
-
-
-
-
-
-//make game reset with wins and losses without refreshing page
-
-
-//when game resets, reset randomized number for user to guess && re-randomize the icon 
