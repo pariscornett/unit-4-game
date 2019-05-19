@@ -25,11 +25,11 @@ var sageClick = 1 + Math.floor(Math.random()* 12);
 
 //make game reset with wins and losses without refreshing page
 function resetGame() {
-basilClick = 1 + Math.floor(Math.random()* 2);    
-cloveClick = 1 + Math.floor(Math.random()* 2);
-dillClick = 1 + Math.floor(Math.random()* 2);
-sageClick = 1 + Math.floor(Math.random()* 2);
-numberToGuess = 1+ Math.floor(Math.random() * 10);
+basilClick = 1 + Math.floor(Math.random()* 12);    
+cloveClick = 1 + Math.floor(Math.random()* 12);
+dillClick = 1 + Math.floor(Math.random()* 12);
+sageClick = 1 + Math.floor(Math.random()* 12);
+numberToGuess = 19+ Math.floor(Math.random() * 100);
 $("#targetNumber").html(numberToGuess);
 totalScore = 0;
 }
